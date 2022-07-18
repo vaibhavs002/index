@@ -57,10 +57,7 @@
   position:absolute ;
   left: 708px;
 }
-.top1{
-  height: 20px;
-  width: 20;
-  margin-left:10%
+
 }
 .h1{
   color: #FFC18E;
@@ -74,7 +71,7 @@
   font-size:10%;
   color: #C689C6;
   font-family: Montserrat;
-  position: absolute;
+  position: relative;
   left: 500px;
   top: 500px;
 }
