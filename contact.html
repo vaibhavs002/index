@@ -1,33 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image1/android-chrome-192x192.png">
-    <title>Document</title>
+    <title>Contact Us - PowerHouse Batteries</title>
+    <!-- गुगल फॉन्ट आणि आयकॉन्स -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="List1">
-    <h1>Contact Details</h1>
-    <p>Email :- shindevaibhavshinde00002@gmail.com</p>
-    <p>Phone no. :- 7887403149</p>
-    <p>Address :- Vasmat Road Parbhani</p>
-    <hr>
-    </div>
-    <div class="list2">
-    <form action="mailto:shindevaibhav00002@gmail.com">
-        <label for="">Your Name :-</label>
-        <input type="text" name="Your Name :-"><br>
-        <label for="">Your Email :-</label>
-        <input type="Email" name="Email :-"><br>
-        <label for="">Your Phone NO.:-</label>
-        <input type="text" name="Phone No.:-"><br>
-        <label for="">Your Massage</label>
-        <input type="text" name="Your Massage"><br>
-        <input type="submit">
-    </form>
-    </div>
+
+    <section class="contact-wrapper">
+        <div class="contact-container">
+            
+            <!-- डावा भाग: संपर्क माहिती -->
+            <div class="contact-info-block">
+                <h1>Contact Details</h1>
+                <p class="subtitle">आम्हाला कधीही संपर्क करा किंवा दुकानाला थेट भेट द्या.</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span>Email Address</span>
+                            <a href="mailto:shindevaibhavshinde00002@gmail.com">shindevaibhavshinde00002@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span>Phone Number</span>
+                            <a href="tel:+917887403149">+91 7887403149</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span>Our Shop Location</span>
+                            <p>Vasmat Road, Parbhani, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- उजवा भाग: चौकशी फॉर्म -->
+            <div class="contact-form-block">
+                <h2>Send a Message</h2>
+                <form action="mailto:shindevaibhav00002@gmail.com" method="post" enctype="text/plain">
+                    
+                    <div class="input-group">
+                        <label for="userName">Your Name</label>
+                        <input type="text" id="userName" name="Name" placeholder="तुमचे नाव प्रविष्ट करा" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userEmail">Your Email</label>
+                        <input type="email" id="userEmail" name="Email" placeholder="तुमचा ईमेल आयडी प्रविष्ट करा" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userPhone">Your Phone No.</label>
+                        <input type="tel" id="userPhone" name="Phone" placeholder="तुमचा मोबाईल नंबर प्रविष्ट करा" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userMessage">Your Message</label>
+                        <textarea id="userMessage" name="Message" rows="4" placeholder="तुमचा संदेश किंवा बॅटरीची चौकशी येथे लिहा..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
 </body>
 </html>
